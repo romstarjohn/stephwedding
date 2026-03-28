@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-green: #274239;
+  --clr-gold: #e6aa03;
+  --clr-grey: #F3F3F5;
+  --mrg-xs: .5rem;
+  --mrg-s: 1rem;
+  --mrg-m: 2rem;
+}
+
+
+#root {
+  width: 100%;
+}
+body {
+  font-family: Barlow, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 200;
+}
+
+.container_main {
+  max-width: 1780px;
+  padding: 0 1.125rem;
+  margin: 0 auto;
+}
+
+header#hero {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 700px;
+  padding: 50px;
+}
+header#hero .wrapper{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  padding: 10px;
+}
+
+header#hero h1 {
+  font-family: 'The Nautigal', serif;
+  font-size: 112px;
+}
+
+header#hero p.heading {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+
+header#hero a {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 35px;
+}
+
+.btn_main {
+  padding: 10px 15px;
+  border: thin solid var(--clr-gold);
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background: var(--clr-gold);
+  transition: all .3s ease;
+  color: #fff;
+}
+
+.wedding-day {
+  text-align: center;
+  padding: 50px;
+}
+
+
+.wedding-day  h2 {
+  font-size: 70px;
+  font-family: 'The Nautigal', serif;
+}
+
+.wedding-day  h3 {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wedding-day .event {
+  background-color: #32342ca8;
+  background-blend-mode: multiply;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  margin:  0 auto;
+  padding: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wedding-day .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wedding-day  a {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 35px;
+}
+
+.event .date {
+  font-size: 55px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  header#hero{
+    padding: 0;
+  }
+  header#hero h1 {
+    font-family: 'The Nautigal', serif;
+    font-size: 75px;
+  }
+  .wedding-day{
+    padding: 10px;
+  }
+
+  .wedding-day .event {
+    height: 350px;
+  }
+  .event .date {
+    font-size:38px;
+  }
+
+  .wedding-day h2 {
+    font-size: 60px;
+  }
+}
